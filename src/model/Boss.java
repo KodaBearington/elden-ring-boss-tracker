@@ -9,12 +9,12 @@ public class Boss {
     private int baseRunes;
     private boolean isRequired;
     private int locationId;
-    private List<String> weaknesses;
+    private List<Weakness> weaknesses;
 
     public Boss() {
     }
 
-    public Boss(int id, String name, int baseHp, int baseRunes, boolean isRequired, int locationId, List<String> weaknesses) {
+    public Boss(int id, String name, int baseHp, int baseRunes, boolean isRequired, int locationId, List<Weakness> weaknesses) {
         this.id = id;
         this.name = name;
         this.baseHp = baseHp;
@@ -72,11 +72,11 @@ public class Boss {
         this.locationId = locationId;
     }
 
-    public List<String> getWeaknesses() {
+    public List<Weakness> getWeaknesses() {
         return weaknesses;
     }
 
-    public void setWeaknesses(List<String> weaknesses) {
+    public void setWeaknesses(List<Weakness> weaknesses) {
         this.weaknesses = weaknesses;
     }
 
